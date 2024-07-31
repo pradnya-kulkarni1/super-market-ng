@@ -1,0 +1,75 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between cards */
+    justify-content: flex-start;
+  }
+  
+  .col {
+ /* Adjust the card width, here 4 cards per row */
+    box-sizing: border-box;
+  }
+  .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Optional: only needed if you want to center vertically as well */
+    gap: 10px; /* Adjust the gap between h4 and the link */
+  }
+  
+  .heading h4 {
+    margin: 0; /* Remove default margin for precise centering */
+  }
+  
+  .heading a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+  }
+  
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    align-content: center;
+    text-align:center;
+    color:green;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.3);
+    transition: box-shadow 0.3s ease;
+  }
+  .card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Media query for responsiveness */
+  /* @media (max-width: 70px) {
+    .col {
+      flex: 1 1 calc(10% - 10px); /* 3 cards per row */
+      .choice {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border:1px;
+        box-shadow:gray;
+    }
+    
+    .change-quantity {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    input[readonly] {
+        width: 40px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    #quantity {
+        width: 40px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }

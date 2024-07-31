@@ -1,0 +1,47 @@
+<div class="admin-layout"
+[ngStyle]="{
+  'grid-template-columns':showLeftNav?'20% 80%':'2% 98%'
+
+}">
+  <div class="left-nav">
+    <div class="brand">
+      <h2 [ngStyle]="{
+        'font-size':showLeftNav?'30px':'10px'
+      }">
+        Welcome
+      </h2>
+    </div>
+    <div class="search">
+      <input type="text" name="" *ngIf="showLeftNav" placeholder="search item...." id="">
+    </div>
+    <ol>
+      <li *ngFor="let item of left_nav_list_item">
+        <div class="left_nav_list_item">
+          <span *ngIf="showLeftNav">
+            {{
+              item.title
+            }}
+
+          </span>
+
+
+        </div>
+      </li>
+
+    </ol>
+  </div>
+
+  <div class="content">
+<div class="main-content-nav">
+ 
+
+<div class="content-outlet">
+    <app-product-list></app-product-list>
+    
+<div class="right-nav">
+    <app-cart></app-cart>
+</div>
+</div>
+</div>
+  </div>
+</div>

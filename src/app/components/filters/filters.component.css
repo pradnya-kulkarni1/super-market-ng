@@ -1,0 +1,168 @@
+.admin-layout{
+    display:grid;
+    grid-template-columns:20% 80%;
+
+    .left-nav{
+        height:100vh;
+        width:220px;
+        background-color:rgb(180, 204, 239);
+        color:blue;
+        .brand{
+            h2{
+                font-size:18px;
+                color:green;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            margin-left:10%;
+            margin-right:10%;
+            margin-top:2rem;
+            text-align:center;
+        }
+        .search{
+            margin-left:10%;
+            margin-right:10%;
+            display:grid;
+            grid-template-columns:90% 10%;
+            align-items:center;
+            margin-top:2rem;
+            border-radius:20px;
+
+            input{
+                border-radius:20px;
+                padding:8px;
+                background-color:rgb(220, 244, 220);
+                outline:rgb(125, 241, 133);
+            }
+        }
+
+        ol{
+            list-style:none;
+            margin-left: 10%;
+            margin-right:10%;
+            cursor:pointer;
+            li{
+                padding:10px;
+                transition:all 0.2s ease-in-out;
+                border: 2px rgb(220, 239, 117);;
+                border-radius:10px;
+                margin-top:10px;
+                .left_nav_list_item{
+                    display:grid;
+                    grid-template-columns:20% 80%;
+                    align-items:center;
+                    text-align:center;
+                }
+
+                &:hover{
+                    border: 2px solid rgb(20, 176, 15);
+                    box-shadow:4px 4px 20px rgb(241, 142, 142);
+                }
+
+            }
+            
+        }
+
+
+    }
+    .content{
+        margin-left:-157px;
+        .main-content-nav{
+            
+            padding:10px;
+            width:100%;
+            background-color:rgb(183, 202, 244);
+            button{
+                padding:6px 10px 6px 10px;
+                border:white;
+                border-radius:10px;
+                transition:all 0.2s ease-in-out;
+                &:hover{
+                    background-color:rgb(122, 241, 124);
+                }
+
+            }
+
+
+        }
+    }
+
+    .content-outlet{
+        height:100vh;
+        padding-left:10px;
+        margin-left:50px;
+
+        max-width:inherit;
+        border:1px solid rgb(172, 101, 239);
+        border-radius:6px;
+        margin:1px;
+        background-color:cornsilk;
+    }
+
+    .right-nav{
+        height:76vh;
+        width:220px;
+        background-color:rgb(180, 204, 239);
+        color:blue;
+        position:fixed;
+        top: 1.27in;
+        right:0;
+        .brand{
+            h2{
+                font-size:18px;
+                color:green;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            margin-left:10%;
+            margin-right:10%;
+            margin-top:2rem;
+            text-align:center;
+        }
+        .search{
+            margin-left:10%;
+            margin-right:10%;
+            display:grid;
+            grid-template-columns:10% 90%;
+            align-items:center;
+            margin-top:2rem;
+            border-radius:20px;
+
+            input{
+                border-radius:20px;
+                padding:8px;
+                background-color:rgb(220, 244, 220);
+                outline:rgb(125, 241, 133);
+            }
+        }
+
+        ol{
+            list-style:none;
+            margin-left: 10%;
+            margin-right:10%;
+            cursor:pointer;
+            li{
+                padding:10px;
+                transition:all 0.2s ease-in-out;
+                border: 2px rgb(220, 239, 117);;
+                border-radius:10px;
+                margin-top:10px;
+                .left_nav_list_item{
+                    display:grid;
+                    grid-template-columns:20% 80%;
+                    align-items:center;
+                    text-align:center;
+                }
+
+                &:hover{
+                    border: 2px solid rgb(20, 176, 15);
+                    box-shadow:4px 4px 20px rgb(241, 142, 142);
+                }
+
+            }
+            
+        }
+
+
+    }
+   
+
+}
